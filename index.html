@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+	
+</head>
+
+<body>
+	<form name="formulario" id="formulario" onsubmit="return validacion ()">
+		<fieldset>
+		<legend>Create Account</legend> <br> <br>
+
+		<div id="bloquenombre">
+			<label>Nombre</label><br>
+			<input type="text" id="nombre" name="name" onkeyup="comprobarNombre()">
+		</div>
+		<br>
+
+		<div id="bloqueemail">
+			<label>Email</label><br>
+			<input type="email" id="email" name="email" onkeyup="comprobaremail()"/>
+		</div>	
+		<br>
+		
+		<div id="bloquepass">
+			<label>Clave</label><br>
+			<input type="password" id="pass" name="password" onkeyup="comprobarpass()"/>
+		</div>
+		<br>
+
+		<div id="bloquepassconfirm">
+			<label>Confirme su clave</label><br>
+			<input type="password" id="passconfirm" name="passconfirm" maxlength="8" onkeyup="comprobarpassconfirm()">
+		</div>
+		<br>
+
+		<label class="submit" id="submit" type="submit" value="ENVIAR" onclick="hizoClick()" >ENVIAR</label><br>
+	</fieldset>
+	</form>
+</body>
+
+</html>
